@@ -1,10 +1,16 @@
-Subject: A Small, Boring System That Makes a Point
+# Sufficient — A Small, Boring System That Makes a Point
+
+A minimal continuous recorder with encryption and peer sync on obsolete hardware.
+
+## Motivation
+
+This repository demonstrates that continuous encrypted recording and peer-to-peer transfer can be achieved with obsolete devices, minimal software, and negligible power — no cloud, no telemetry.
 
 We built a small system using two old Android 4.4 (KitKat) phones.
 
 One device records continuous white noise in 5 minute 5 second blocks.
 Each block overlaps the previous one by 5 seconds.
-Files are compressed (AMR 4.75 kbps target), encrypted with AES using a per-chunk session key, and sent to a second device.
+Files are compressed Advanced Multirate (AMR) codec at 4.75 kbps target, encrypted with Andvanced Encryption Standard (AES) using a per-chunk session key, and sent to a second device.
 
 The private key is not stored on either device.
 
